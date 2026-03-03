@@ -1,5 +1,13 @@
 html{
     scroll-behavior: smooth;
+    background: var(--primary-bg);
+    color: var(--text-main);
+    font-family: var(--main-font);
+}
+body {
+    font-family: var(--main-font) !important;
+    background: var(--primary-bg);
+    color: var(--text-main);
 }
 /* #### navbar #### */
 .navbar{
@@ -7,8 +15,11 @@ html{
     z-index: 999;
     top: 0;
     left: 0;
-    background: var(--nero);
+    background: var(--secondary-bg);
     width: 100%;
+    box-shadow: 0 2px 8px 0 #101114;
+    border-radius: 0 0 12px 12px;
+    border-bottom: 1px solid var(--border);
 }
 .brand-and-toggler{
     display: flex;
@@ -57,14 +68,17 @@ html{
 }
 .nav-link{
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    color: var(--text-main);
+    letter-spacing: 1px;
+    font-family: var(--main-font);
     transition: var(--transition);
 }
 .nav-link:hover{
-    color: var(--green);
+    color: var(--accent);
 }
 .nav-active .nav-link{
-    color: var(--green);
+    color: var(--accent);
 }
 
 /*** show nav class ***/
@@ -152,6 +166,10 @@ html{
 }
 .about-content{
     margin: 1.5rem 0;
+    background: var(--nero);
+    border-radius: 16px;
+    box-shadow: 0 2px 8px 0 rgba(60,72,88,0.08);
+    padding: 1rem 1.5rem;
 }
 .about-content li{
     display: flex;
@@ -185,7 +203,10 @@ html{
 .resume .item{
     padding: 0 2.5rem;
     margin: 2rem;
-    border-left: 1px solid var(--nero);
+    background: var(--morph-bg);
+    border-radius: 24px;
+    box-shadow: var(--morph-shadow);
+    border-left: 6px solid var(--green);
     position: relative;
 }
 .resume .item > span{
@@ -238,9 +259,9 @@ html{
     margin: 1.5rem 0;
     cursor: pointer;
     transition: var(--transition);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 90% 100%, 0% 100%);
-    border-radius: 20px;
-    border-bottom: 5px solid  var(--nero);;
+    border-radius: 24px;
+    box-shadow: 0 4px 24px 0 rgba(60,72,88,0.08);
+    border-bottom: 5px solid var(--green);
 }
 .services .item span{
     font-size: 5rem;
@@ -265,7 +286,9 @@ html{
 }
 .services .item:hover{
     background: var(--green);
-    border-bottom: 5px solid  #fff;
+    color: #fff;
+    border-bottom: 5px solid #fff;
+    box-shadow: 0 8px 32px 0 rgba(60,72,88,0.15);
 }
 .services .item:hover span{
     color: #fff;
@@ -478,7 +501,7 @@ html{
     width: 100%;
     margin: 1rem 0;
     background: var(--nero);
-    border: 2px solid transparent;
+    border: 2px solid #fff;
     font-size: 1rem;
     padding: 0.8rem 1rem;
     border-radius: 25px;
@@ -500,7 +523,9 @@ html{
 /* #### footer #### */
 .footer{
     padding: 2.5rem 0;
-    border-top: 1.5px solid #252525;
+    border-top: 1.5px solid var(--nero);
+    background: var(--morph-bg);
+    box-shadow: 0 -4px 24px 0 rgba(60,72,88,0.08);
 }
 .footer-title{
     text-transform: capitalize;
@@ -510,6 +535,10 @@ html{
 .footer .col{
     text-align: center;
     padding: 1rem 0;
+    background: var(--nero);
+    border-radius: 16px;
+    margin: 0.5rem;
+    box-shadow: 0 2px 8px 0 rgba(60,72,88,0.08);
 }
 .footer .col:first-child .text{
     width: 80%;
@@ -520,7 +549,7 @@ html{
     justify-content: center;
 }
 .social-links a{
-    background: var(--nero);
+    background: #fff;
     width: 50px;
     height: 50px;
     font-size: 1.5rem;
@@ -530,9 +559,12 @@ html{
     border-radius: 50%;
     margin: 1.5rem 0.5rem;
     transition: var(--transition);
+    box-shadow: 0 2px 8px 0 rgba(60,72,88,0.08);
 }
 .social-links a:hover{
     background: var(--green);
+    color: #fff;
+    border-color: var(--green);
 }
 .footer-links a{
     display: block;
@@ -753,9 +785,12 @@ html{
 
 
 .skills-section {
-    width: 80%;
-    margin: auto;
-  }
+        width: 80%;
+        margin: auto;
+        background: var(--morph-bg);
+        border-radius: 24px;
+        box-shadow: 0 4px 24px 0 rgba(60,72,88,0.08);
+        padding: 2rem 1rem;
 
   @media (max-width: 768px) {
 
@@ -779,13 +814,12 @@ html{
   }
 
   .skill {
-    padding: 5px;
-    margin: 5px;
-    background: var(--nero);
-    text-align: center;
- 
-    border-radius: 12px;
-  }
+        padding: 10px;
+        margin: 10px;
+        background: var(--nero);
+        text-align: center;
+        border-radius: 16px;
+        box-shadow: 0 2px 8px 0 rgba(60,72,88,0.08);
 
   .skill-icon {
     max-width: 50px;

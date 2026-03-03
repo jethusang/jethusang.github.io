@@ -1,116 +1,128 @@
 /* setup and common stylings */
-:root{
-    --poppins: 'Poppins', sans-serif;
-    --sans: 'Open Sans', sans-serif;
-    --green: #72b626;
-    --black: #1A1A1D;
-    --nero: #4E9F3D;
-    --transition: all 0.4s ease;
+:root {
+  --main-font:
+    "Space Grotesk", "Oswald", "Roboto Mono", "Consolas", "Menlo", "monospace",
+    Arial, sans-serif;
+  --primary-bg: #181a20;
+  --secondary-bg: #23252b;
+  --card-bg: #23252b;
+  --border: #31343b;
+  --text-main: #f3f3f3;
+  --text-muted: #b0b3b8;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --transition: all 0.4s ease;
 }
 
 .titillium-web-extralight {
-    font-family: "Titillium Web", serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .titillium-web-light {
-    font-family: "Titillium Web", serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .titillium-web-regular {
-    font-family: "Titillium Web", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .titillium-web-semibold {
-    font-family: "Titillium Web", serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .titillium-web-bold {
-    font-family: "Titillium Web", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .titillium-web-black {
-    font-family: "Titillium Web", serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .titillium-web-extralight-italic {
-    font-family: "Titillium Web", serif;
-    font-weight: 200;
-    font-style: italic;
-  }
-  
-  .titillium-web-light-italic {
-    font-family: "Titillium Web", serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .titillium-web-regular-italic {
-    font-family: "Titillium Web", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .titillium-web-semibold-italic {
-    font-family: "Titillium Web", serif;
-    font-weight: 600;
-    font-style: italic;
-  }
-  
-  .titillium-web-bold-italic {
-    font-family: "Titillium Web", serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: var(--sans);
+  font-family: "Titillium Web", serif;
+  font-weight: 200;
+  font-style: normal;
 }
-body{
-    color: #fff;
-    line-height: 1.5;
-    background: var(--black);
-    overflow-x: hidden;
-    /* background: linear-gradient(to bottom right, #111 15%, transparent),
+
+.titillium-web-light {
+  font-family: "Titillium Web", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.titillium-web-regular {
+  font-family: "Titillium Web", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.titillium-web-semibold {
+  font-family: "Titillium Web", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.titillium-web-bold {
+  font-family: "Titillium Web", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.titillium-web-black {
+  font-family: "Titillium Web", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.titillium-web-extralight-italic {
+  font-family: "Titillium Web", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.titillium-web-light-italic {
+  font-family: "Titillium Web", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.titillium-web-regular-italic {
+  font-family: "Titillium Web", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.titillium-web-semibold-italic {
+  font-family: "Titillium Web", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.titillium-web-bold-italic {
+  font-family: "Titillium Web", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--sans);
+}
+body {
+  color: #fff;
+  line-height: 1.5;
+  background: var(--black);
+  overflow-x: hidden;
+  /* background: linear-gradient(to bottom right, #111 15%, transparent),
     radial-gradient(circle at 100% 0%, rgba(255, 255, 255, .2) 10%, transparent 20%) center center / 15px 15px,
     linear-gradient(to bottom right, #3C4BBD, #57ADD8); */
 }
-a{
-    color: #191A19;
-    text-decoration: none;
+a {
+  color: #191a19;
+  text-decoration: none;
 }
-img{
+img {
   /* top: 60px; */
-    width: 70%;
-    display: block;
-    /* filter: drop-shadow(30px 10px 4px var(--green)); */
+  width: 70%;
+  display: block;
+  /* filter: drop-shadow(30px 10px 4px var(--green)); */
 }
-.sh-img{
+.sh-img {
   filter: drop-shadow(30px 10px 4px var(--green));
 }
-ul li{
-    list-style-type: none;
+ul li {
+  list-style-type: none;
 }
-h1, h2, h3, h4, h5, h6, p{
-    padding: 0.6rem 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0.6rem 0;
 }
 
 /* button */
-/* From Uiverse.io by mi-series */ 
+/* From Uiverse.io by mi-series */
 
 /* .btn{
     border: none;
@@ -131,114 +143,122 @@ h1, h2, h3, h4, h5, h6, p{
 } */
 
 .btn {
-    outline: 0;
-    display: inline-block;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--nero);
-    /* min-width: 200px; */
-    border: 0;
-    font-weight: 700;
-    border-radius: 4px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
-    box-sizing: border-box;
-    padding: 16px 20px;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-    overflow: hidden;
-    cursor: pointer;
-    margin: 1rem 0;
-  }
-  
-  .btn:hover {
-    opacity: .95;
-  }
-  
-  .btn .animation {
-    border-radius: 100%;
-    animation: ripple 0.6s linear infinite;
-  }
-  
-  @keyframes ripple {
-    0% {
-      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
-    }
-  
-    100% {
-      box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
-    }
+  outline: 0;
+  display: inline-block;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--nero);
+  /* min-width: 200px; */
+  border: 0;
+  font-weight: 700;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  padding: 16px 20px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.btn:hover {
+  opacity: 0.95;
+}
+
+.btn .animation {
+  border-radius: 100%;
+  animation: ripple 0.6s linear infinite;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow:
+      0 0 0 0 rgba(255, 255, 255, 0.1),
+      0 0 0 20px rgba(255, 255, 255, 0.1),
+      0 0 0 40px rgba(255, 255, 255, 0.1),
+      0 0 0 60px rgba(255, 255, 255, 0.1);
   }
 
-.text{
-    font-size: 1.05rem;
-    color: #d0d0d0;
-    line-height: 1.7;
+  100% {
+    box-shadow:
+      0 0 0 20px rgba(255, 255, 255, 0.1),
+      0 0 0 40px rgba(255, 255, 255, 0.1),
+      0 0 0 60px rgba(255, 255, 255, 0.1),
+      0 0 0 80px rgba(255, 255, 255, 0);
+  }
+}
+
+.text {
+  font-size: 1.05rem;
+  color: #d0d0d0;
+  line-height: 1.7;
 }
 
 /* title */
-.title{
-    position: relative;
+.title {
+  position: relative;
 }
-.title > h2{
+.title > h2 {
+  font-size: 3rem;
+  /* font-family: var(--poppins); */
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 900;
+  color: var(--nero);
+}
+.title div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+.title div h2 {
+  text-transform: capitalize;
+  font-size: 2rem;
+  /* font-family: var(--poppins); */
+  font-weight: 800;
+}
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 500px) {
+  .title > h2 {
+    font-size: 6rem;
+  }
+  .title div h2 {
     font-size: 3rem;
-    /* font-family: var(--poppins); */
-    text-align: center;
-    text-transform: capitalize;
-    font-weight: 900;
-    color: var(--nero);
-}
-.title div{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    width: 100%;
-    transform: translate(-50%, -50%);
-}
-.title div h2{
-    text-transform: capitalize;
-    font-size: 2rem;
-    /* font-family: var(--poppins); */
-    font-weight: 800;
-}
-.container{
-    width: 90vw;
-    margin: 0 auto;
+  }
 }
 
-@media screen and (min-width: 500px){
-    .title > h2{
-        font-size: 6rem;
-    }
-    .title div h2{
-        font-size: 3rem;
-    }
+@media screen and (min-width: 992px) {
+  .container {
+    width: 88vw;
+  }
 }
-
-@media screen and (min-width: 992px){
-    .container{
-        width: 88vw;
-    }
-}
-@media screen and (min-width: 1200px){
-    .container{
-        width: 85vw;
-    }
-    .home .img-container{
-      top: 30px;
-    }
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 85vw;
+  }
+  .home .img-container {
+    top: 30px;
+  }
 }
 
 /* animation and transition stopper styling */
-.resize-animation-stopper *{
-    animation: none !important;
-    transition: none !important;
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
 }
 
-/* From Uiverse.io by boryanakrasteva */ 
+/* From Uiverse.io by boryanakrasteva */
 .btn-view {
   width: 140px;
   height: 40px;
@@ -250,12 +270,12 @@ h1, h2, h3, h4, h5, h6, p{
   border: none;
   position: relative;
   background-color: transparent;
-  transition: .2s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: 0.2s cubic-bezier(0.19, 1, 0.22, 1);
   opacity: 0.6;
 }
 
 .btn-view::after {
-  content: '';
+  content: "";
   border-bottom: 3px double rgb(214, 207, 113);
   width: 0;
   height: 100%;
@@ -265,12 +285,12 @@ h1, h2, h3, h4, h5, h6, p{
   left: 5px;
   visibility: hidden;
   opacity: 1;
-  transition: .2s linear;
+  transition: 0.2s linear;
 }
 
 .btn-view .icon {
   transform: translateX(0%);
-  transition: .2s linear;
+  transition: 0.2s linear;
   animation: attention 1.2s linear infinite;
 }
 
