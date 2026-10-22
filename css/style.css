@@ -507,6 +507,7 @@ body {
     border-radius: 25px;
     outline: 0;
     caret-color: #fff;
+    color: darkolivegreen;
 }
 .contact-form input:focus, .contact-form textarea:focus{
     border-color: var(--green);
@@ -806,6 +807,7 @@ body {
       width: 95%;
     }
   }
+}
 
   .skill-container {
     display: flex;
@@ -820,7 +822,7 @@ body {
         text-align: center;
         border-radius: 16px;
         box-shadow: 0 2px 8px 0 rgba(60,72,88,0.08);
-
+  }
   .skill-icon {
     max-width: 50px;
     margin-bottom: 10px;
